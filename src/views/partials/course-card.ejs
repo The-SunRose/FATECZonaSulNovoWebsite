@@ -1,0 +1,8 @@
+<article class="course-card h-100">
+  <div class="d-flex justify-content-between align-items-start"><span class="course-icon"><i class="bi bi-<%= course.icon %>" aria-hidden="true"></i></span><span class="course-tag"><%= course.category %></span></div>
+  <p class="course-acronym"><%= course.acronym %></p>
+  <h3><a href="/cursos/<%= course.slug %>"><%= course.name %></a></h3>
+  <p class="course-summary"><%= course.summary %></p>
+  <div class="course-meta"><span><i class="bi bi-clock" aria-hidden="true"></i> <%= course.duration %></span><span>Graduação gratuita</span></div>
+  <a class="course-link" href="/cursos/<%= course.slug %>">Conheça o curso <i class="bi bi-arrow-up-right" aria-hidden="true"></i><span class="visually-hidden"> de <%= course.name %></span></a>
+</article>

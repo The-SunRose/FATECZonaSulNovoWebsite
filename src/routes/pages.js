@@ -1,0 +1,10 @@
+import { Router } from 'express';
+import { portalController as controller } from '../controllers/portalController.js';
+export const pagesRouter = Router();
+pagesRouter.get(['/', '/index.html'], controller.home);
+pagesRouter.get('/cursos', controller.courses);
+pagesRouter.get('/cursos/:slug', controller.course);
+pagesRouter.get('/vestibular', controller.vestibular);
+pagesRouter.get('/infraestrutura', controller.infrastructure);
+pagesRouter.get('/eventos', controller.events);
+pagesRouter.get('/quem-somos', controller.about);
